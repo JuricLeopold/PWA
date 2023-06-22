@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:wght@200;400&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Newsreader', serif;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    border-bottom: 1px solid lightgray;
+}
+
+header h1 {
+    margin: 10px 0;
+    font-size: 70px;
+    font-weight: 400;
+}
+
+nav {
+    margin-bottom: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    margin: 0 12px;
+    font-weight: 700;
+}
+
+main {
+    margin: auto;
+    max-width: 1024px;
+    min-height: 90vh;
+}
+
+section h2 {
+    text-align: center;
+    margin: 60px 0;
+}
+
+.articles {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+    row-gap: 20px;
+    justify-content: center;
+    margin: auto;
+}
+
+article {
+    background-color: white;
+    width: 300px;
+    min-height: 340px;
+    margin: auto;
+    font-weight: 200;
+    border: 1px solid lightgray;
+}
+
+article img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+}
+
+article div {
+    width: 260px;
+    transform: translateY(-20px);
+    margin: auto;
+    text-align: center;
+    background-color: white;
+}
+
+article div h3 {
+    padding: 10px;
+    max-width: 180px;
+    margin: auto;
+}
+
+article div h3 a {
+    color: black;
+    text-decoration: none;
+}
+
+article div p {
+    font-size: 15px;
+}
+
+section:last-child {
+    margin-bottom: 70px;
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 25px 0;
+    background-color: lightgray;
+    margin-top: 20px;
+}
+
+footer p {
+    padding: 0 20px;
+    font-size: smaller;
+    text-align: center;
+}
+
+form {
+    max-width: 500px;
+    margin: auto;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 40px;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0;
+}
+
+form div label {
+    font-weight: 700;
+    font-size: 20px;
+    margin: 5px 0;
+}
+
+form div input {
+    width: 99%;
+    height: 50px;
+    margin: auto;
+}
+
+form div textarea {
+    width: 99%;
+    height: 150px;
+    margin: auto;
+}
+
+form div select {
+    height: 50px;
+}
+
+#checkbox {
+    height: auto;
+    width: 40px;
+    margin: 0 10px;
+}
+
+.checkbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+form button {
+    width: 120px;
+    font-size: 20px;
+    height: 50px;
+    background-color: lightgray;
+    border: none;
+    transition: 0.2s ease-in;
+}
+
+form button:hover {
+    background-color: rgb(143, 143, 143);
+    cursor: pointer;
+    transform: translateY(-10px);
+}
+
+#unos {
+    max-width: 1024px;
+    margin: auto;
+}
+
+#unos section h4 {
+    color: gray;
+    font-size: smaller;
+    margin: 20px 0;
+}
+
+#unos section h1 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+#unos section h2 {
+    font-weight: 400;
+    font-size: 23px;
+    margin: 0;
+    text-align: left;
+}
+
+#unos section img {
+    max-width: 600px;
+    margin: 20px 0;
+}
+
+#unos #date {
+    margin: 20px 0;
+    border: 1px solid lightgray;
+    padding: 10px;
+    font-size: small;
+}
+
+#unos section p {
+    font-size: 20px;
+    text-align: justify;
+}
+
+#unos section p:last-child {
+    margin-bottom: 60px;
+}
+
+input {
+    padding-left: 10px;
+}
+
+textarea {
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+#slika {
+    padding-top: 30px;
+    padding-left: 0;
+}
+
+.error {
+    margin-top: 5px;
+    color: red;
+    font-size: 20px;
+}
+
+#administracija {
+    max-width: 1500px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 80px;
+}
+
+#administracija form {
+    width: 500px;
+    margin-top: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#login form {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 20px 50px 20px 40px;
+    margin-top: 100px;
+}
+
+#login form h1 {
+    text-align: center;
+    padding-top: 20px;
+}
+
+#login form div:last-child {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#login form div:last-child a {
+    text-decoration: none;
+    margin-left: 20px;
+    color: blue;
+}
+
+#btn-div {
+    display: flex;
+    align-items: center;
+}
+
+#prijava-div {
+    text-align: center;
+}
+
+#prijava-p {
+    margin: 50px 0 20px;
+    color: red;
+    font-size: 20px;
+    text-align: center;
+}
+
+#prijava-a {
+    color: darkblue;
+    font-size: 20px;
+}
+
+#registracion-success {
+    font-size: 40px;
+    text-align: center;
+    padding: 45vh 0;
+}
+
+
+@media (max-width: 1024px) {
+    .articles {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 1200px) {
+    #administracija {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .articles {
+        grid-auto-flow: row;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        margin: auto;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav a {
+        margin: 10px 0;
+    }
+
+    section h2 {
+        margin: 60px 0;
+    }
+
+    #unos {
+        padding: 10px;
+    }
+
+    #unos section img {
+        max-width: 100%;
+    }
+}
